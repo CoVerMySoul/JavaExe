@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'com.tb'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+/*
+gradle所有的jar包的坐标都在dependencies 属性里面
+每一个jar包的坐标都有3个基本的元素（group, name, version）
+testCompile表示该jar包只有在测试的时候起作用,该属性为Jar包的作用域
+ */
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.springframework', name: 'spring-context', version: '5.2.0.RELEASE'
+}
