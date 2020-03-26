@@ -1,6 +1,6 @@
 package com.example.java8.java8.Java8;
 
-//import com.example.javabasic.javabasic.FanXing.Test;
+//import com.example.javabasic.javabasic.FanXing.packa;
 
 import java.util.function.Function;
 
@@ -33,8 +33,8 @@ public class FunctionTest {
   }
 
 
-//  public void hh(Test<String> test){
-//    Test<String> h = new Test<String>() {
+//  public void hh(packa<String> test){
+//    packa<String> h = new packa<String>() {
 //      @Override
 //      public void hello(String s) {
 //

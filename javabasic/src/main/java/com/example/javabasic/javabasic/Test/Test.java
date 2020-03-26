@@ -6,6 +6,7 @@ import com.example.javabasic.javabasic.Pojo.Tanbo;
 import com.example.javabasic.javabasic.Pojo.Teacher;
 
 import java.util.Random;
+import java.util.Scanner;
 
 /**
  * @Description:
@@ -19,7 +20,14 @@ public class Test {
 //    test2();
 //    test3();
 //    test4();
-    test5();
+    Scanner scanner = new Scanner(System.in);
+    do {
+      int x =scanner.nextInt();
+      if (x<=0){
+        break;
+      }
+      test5();
+    }while (true);
   }
 
   private static void test5() {

@@ -11,7 +11,7 @@ public interface Test<A> {
   void hello(A a);
 }
 
-//class Son<A> implements Test<A>{
+//class Son<A> implements packa<A>{
 //
 //}
 
