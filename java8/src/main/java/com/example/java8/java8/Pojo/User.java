@@ -10,17 +10,18 @@ import lombok.Data;
  */
 @Data
 public class User {
-    private String username;
-    private int score;
-    private int age;
+  private String username;
+  private int score;
+  private int age;
 
 
-    public User(String username, int score, int age) {
-        this.username = username;
-        this.score = score;
-        this.age = age;
-    }
-    public User(){
+  public User(String username, int score, int age) {
+    this.username = username;
+    this.score = score;
+    this.age = age;
+  }
 
-    }
+  public User() {
+
+  }
 }

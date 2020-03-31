@@ -38,9 +38,9 @@ public class PredicateTest {
     coditionFilter(list, num -> num % 2 == 0);
   }
 
-  private static void coditionFilter(List<Integer> list, Predicate<Integer> predicate){
+  private static void coditionFilter(List<Integer> list, Predicate<Integer> predicate) {
     for (Integer number : list) {
-      if (predicate.test(number)){
+      if (predicate.test(number)) {
         System.out.println(number);
       }
     }
@@ -57,10 +57,10 @@ public class PredicateTest {
       }
     };
 
-    Predicate<String> predicate1 = item ->{
-      if (item.equals("tb")){
-        return  true;
-      }else {
+    Predicate<String> predicate1 = item -> {
+      if (item.equals("tb")) {
+        return true;
+      } else {
         return false;
       }
     };

@@ -46,7 +46,7 @@ public class MethodReferenceTest1 {
 //        studentList.sort((studentParma1, studentParam2) ->
 //            Student.compareStudentByName(studentParma1,studentParam2));
 //        studentList.forEach(item -> System.out.println(item.getName()));
-        //第2种方式f'g
+    //第2种方式f'g
 //    StudentComparator studentComparator = new StudentComparator();
 //    studentList.sort(studentComparator::compareStudent
     //第3种方式
@@ -60,10 +60,11 @@ public class MethodReferenceTest1 {
     System.out.println(methodReferenceTest.getMyString("hello", String::new));
   }
 
-  public String getMyString(Supplier<String> supplier){
-    return supplier.get()+"myTest";
+  public String getMyString(Supplier<String> supplier) {
+    return supplier.get() + "myTest";
   }
-  public String getMyString(String str, Function<String, String> function){
+
+  public String getMyString(String str, Function<String, String> function) {
     return function.apply(str);
   }
 }

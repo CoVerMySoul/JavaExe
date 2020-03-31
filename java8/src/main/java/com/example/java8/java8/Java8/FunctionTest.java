@@ -14,21 +14,23 @@ import java.util.function.Function;
 public class FunctionTest {
   public static void main(String[] args) {
     FunctionTest test = new FunctionTest();
-    System.out.println(test.compute(1, value -> {return  2*value;}));
-    System.out.println(test.compute(2, arg -> 5+arg));
-    System.out.println(test.compute(3, value -> value*value));
+    System.out.println(test.compute(1, value -> {
+      return 2 * value;
+    }));
+    System.out.println(test.compute(2, arg -> 5 + arg));
+    System.out.println(test.compute(3, value -> value * value));
 
-    System.out.println(test.convert(5, tanbo -> String.valueOf(tanbo+"hellowordl")));
+    System.out.println(test.convert(5, tanbo -> String.valueOf(tanbo + "hellowordl")));
     Function<Integer, Integer> function = value -> 100 * value;
     System.out.println(test.compute(100, function));
   }
 
-  public int compute(int a, Function<Integer, Integer> function){
+  public int compute(int a, Function<Integer, Integer> function) {
     int result = function.apply(a);
     return result;
   }
 
-  public String convert(int a, Function<Integer, String> function){
+  public String convert(int a, Function<Integer, String> function) {
     return function.apply(a);
   }
 
@@ -44,13 +46,15 @@ public class FunctionTest {
 //  }
 
   //这是以前的方式，行为先定义好
-  public int method1(int a){
-    return 2*a;
+  public int method1(int a) {
+    return 2 * a;
   }
-  public int method2(int a){
+
+  public int method2(int a) {
     return 5 + a;
   }
-  public int method3(int a){
-    return a*a;
+
+  public int method3(int a) {
+    return a * a;
   }
 }

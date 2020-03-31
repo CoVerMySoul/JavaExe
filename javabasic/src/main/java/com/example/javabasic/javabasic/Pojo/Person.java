@@ -5,13 +5,15 @@ package com.example.javabasic.javabasic.Pojo;
  * @Author: TanBoQiuYun
  * @Date: 2019/11/21 14:01
  */
-public class Person{
+public class Person extends Object {
   private int age;
   private String name;
+  private static String tanbo;
 
-  public  Person() {
+  public Person() {
 
   }
+
   public Person(int age, String name) {
     this.age = age;
     this.name = name;
@@ -37,16 +39,16 @@ public class Person{
     this.name = name;
   }
 
-//  重写equals方法
+  //  重写equals方法
   @Override
   public boolean equals(Object obj) {
-    if (this == obj){
+    if (this == obj) {
       return true;
     }
-    if (obj instanceof Person){
+    if (obj instanceof Person) {
       Person anotherPerson = (Person) obj;
       //比较this和anotherPerson这两个对象的name属性
-      if (this.name.equals(anotherPerson.name)){
+      if (this.name.equals(anotherPerson.name)) {
         return true;
       }
     }

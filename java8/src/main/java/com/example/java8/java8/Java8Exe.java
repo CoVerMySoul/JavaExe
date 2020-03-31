@@ -15,7 +15,7 @@ public class Java8Exe {
     Set<Integer> stringSet = new HashSet<>();
     stringSet.add(1);
     stringSet.add(1);
-    stringSet.forEach(e-> System.out.println(e));
+    stringSet.forEach(e -> System.out.println(e));
 //    Person person1 = new Person(1,"first");
 //    Person person2 = new Person(19,"first");
 //    Person person3 = new Person(8,"first");
@@ -24,8 +24,7 @@ public class Java8Exe {
   }
 
 
-
-  private class e{
+  private class e {
 
   }
 

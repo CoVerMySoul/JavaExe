@@ -6,13 +6,16 @@ package com.example.javabasic.javabasic.Pojo;
  */
 public class People {
   private String name;
-  public void eat(){
+
+  public void eat() {
     System.out.println("人类得吃饭方法");
   }
-  public void sleep(){
+
+  public void sleep() {
     System.out.println("人类得睡觉方法");
   }
-  public void talk(){
+
+  public void talk() {
     System.out.println("人类得说话方法");
   }
 }

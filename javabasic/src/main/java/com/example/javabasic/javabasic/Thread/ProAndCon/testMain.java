@@ -4,7 +4,7 @@ package com.example.javabasic.javabasic.Thread.ProAndCon;
  * @Author: TanBoQiuYun
  * @Date: 2020/2/22 10:43
  */
-public class testMain extends Object{
+public class testMain extends Object {
   public static void main(String[] args) {
     WareHouse wareHouse = new WareHouse();
     Producer producer = new Producer(wareHouse);

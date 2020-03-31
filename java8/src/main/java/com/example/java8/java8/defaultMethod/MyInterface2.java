@@ -7,7 +7,7 @@ package com.example.java8.java8.defaultMethod;
  */
 public interface MyInterface2 {
 
-  default void myInterface(){
+  default void myInterface() {
     System.out.println("MyInterface2");
   }
 

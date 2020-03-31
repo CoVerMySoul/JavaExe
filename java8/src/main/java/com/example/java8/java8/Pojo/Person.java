@@ -7,13 +7,14 @@ import java.util.Objects;
  * @Author: TanBoQiuYun
  * @Date: 2019/11/21 14:01
  */
-public class Person{
+public class Person {
   private int age = 20;
   private String name = "张三";
 
   public Person() {
 
   }
+
   public Person(int age, String name) {
     this.age = age;
     this.name = name;

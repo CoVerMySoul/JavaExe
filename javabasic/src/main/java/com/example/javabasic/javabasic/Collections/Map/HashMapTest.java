@@ -10,7 +10,7 @@ import java.util.Set;
  */
 public class HashMapTest {
   public static void main(String[] args) {
-   test1();
+    test1();
   }
 
   private static void test1() {

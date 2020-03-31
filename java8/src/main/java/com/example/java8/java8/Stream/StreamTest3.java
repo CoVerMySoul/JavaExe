@@ -37,6 +37,7 @@ public class StreamTest3 {
 
   /**
    * 打印列表长度为5的第一个单词
+   *
    * @param list
    */
   private static void test1(List<String> list) {

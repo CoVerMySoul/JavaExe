@@ -1,4 +1,5 @@
 package com.example.java8.java8.defaultMethod;
+
 /**
  * @Description: 默认方法
  * @Author: TanBoQiuYun
@@ -6,7 +7,7 @@ package com.example.java8.java8.defaultMethod;
  */
 public interface MyInterface1 {
 
-  default void myInterface(){
+  default void myInterface() {
     System.out.println("MyInterface1");
   }
 

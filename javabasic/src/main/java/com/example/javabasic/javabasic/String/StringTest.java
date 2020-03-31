@@ -1,4 +1,5 @@
 package com.example.javabasic.javabasic.String;
+
 /**
  * @Description: 字符串
  * @Author: TanBoQiuYun
@@ -23,7 +24,7 @@ public class StringTest {
    * 对象5——> value[] {ab, c}   "abc"
    * 对象6——> value[] d   "d"
    * 对象7——> value[] {abc, d}   "abcd"
-   * */
+   */
   private static void test2() {
     String str = "a" + "b" + "c" + "d";
 

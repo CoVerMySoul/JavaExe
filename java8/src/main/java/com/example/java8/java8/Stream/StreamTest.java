@@ -27,13 +27,14 @@ public class StreamTest {
 
   /**
    * 测试2
+   *
    * @param studentList
    */
   private static void test2(List<Student> studentList) {
     Predicate<Student> x = new Predicate<Student>() {
       @Override
       public boolean test(Student student) {
-        if (student.getSocre()>=50){
+        if (student.getSocre() >= 50) {
           return true;
         }
         return false;
@@ -46,6 +47,7 @@ public class StreamTest {
 
   /**
    * 测试1
+   *
    * @param studentList
    */
   private static void test1(List<Student> studentList) {

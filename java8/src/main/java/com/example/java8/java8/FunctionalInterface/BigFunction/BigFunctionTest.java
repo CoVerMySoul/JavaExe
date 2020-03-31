@@ -31,6 +31,7 @@ public class BigFunctionTest {
 
   /**
    * 自定义方法
+   *
    * @param score
    * @param students
    * @param biFunction
@@ -42,31 +43,33 @@ public class BigFunctionTest {
 
   /**
    * 根据名字
+   *
    * @param name
    * @param students
    * @return
    */
-  private static List<Student> getStudentByName(String name, List<Student> students){
+  private static List<Student> getStudentByName(String name, List<Student> students) {
     return students.stream().filter(item -> item.getName().equals(name)).collect(Collectors.toList());
   }
 
   /**
    * 根据分数
+   *
    * @param score
    * @param students
    * @return
    */
-  private static List<Student> getStudentByScore(Integer score, List<Student> students){
+  private static List<Student> getStudentByScore(Integer score, List<Student> students) {
 //    BiFunction<Integer, List<Student>, List<Student>> biFunction = new BiFunction<Integer, List<Student>, List<Student>>() {
 //      @Override
 //      public List<Student> apply(Integer integer, List<Student> students) {
 //        return null;
 //      }
 //    };
-    BiFunction<Integer, List<Student>, List<Student>> biFunction = (myScore, studentList) -> 
-       studentList.stream().filter(item -> item.getSocre() > myScore).collect(Collectors.toList());
+    BiFunction<Integer, List<Student>, List<Student>> biFunction = (myScore, studentList) ->
+            studentList.stream().filter(item -> item.getSocre() > myScore).collect(Collectors.toList());
     return biFunction.apply(score, students);
   }
-  
-  
+
+
 }

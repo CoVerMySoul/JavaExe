@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 /**
  * 仓库
+ *
  * @Author: TanBoQiuYun
  * @Date: 2020/2/22 9:57
  */
@@ -14,10 +15,10 @@ public class WareHouse {
   /**
    * 往仓库里面放元素
    */
-  public synchronized void add(){
-    if (list.size() < 20){
+  public synchronized void add() {
+    if (list.size() < 20) {
       list.add("a");
-    }else {
+    } else {
 //      return;//让方法执行到这里就结束方法
       try {
         this.notifyAll();
@@ -31,10 +32,10 @@ public class WareHouse {
   /**
    * 从仓库集合里面获取元素
    */
-  public synchronized void get(){
-    if (list.size() > 0){
+  public synchronized void get() {
+    if (list.size() > 0) {
       list.remove(0);//集合越界的问题
-    }else {
+    } else {
 //      return;
       try {
         this.notifyAll();

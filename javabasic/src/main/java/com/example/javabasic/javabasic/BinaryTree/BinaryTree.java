@@ -6,7 +6,8 @@ package com.example.javabasic.javabasic.BinaryTree;
  */
 public class BinaryTree {
   TreeNode root; // 根节点
-  public BinaryTree(){
+
+  public BinaryTree() {
     this.root = null;
   }
 }

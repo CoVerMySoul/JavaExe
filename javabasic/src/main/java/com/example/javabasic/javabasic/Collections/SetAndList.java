@@ -33,15 +33,16 @@ public class SetAndList {
 
     Integer[] array = new Integer[integerList.size()];
     integerList.toArray(array);
-    for (Integer x:array) {
+    for (Integer x : array) {
       System.out.println(x);
     }
   }
 
-  private void  test1(String parm1){
+  private void test1(String parm1) {
 
   }
-  private void test2(Integer parm2){
+
+  private void test2(Integer parm2) {
 
   }
 }

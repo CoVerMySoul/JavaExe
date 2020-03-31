@@ -36,20 +36,20 @@ public class HashSetTest {
    * 判断是否重复
    */
   private static void test5() {
-    User user1 = new User("aa",1,1);
-    User user2 = new User("bb",12,1);
-    User user3 = new User("bb",15,1);
+    User user1 = new User("aa", 1, 1);
+    User user2 = new User("bb", 12, 1);
+    User user3 = new User("bb", 15, 1);
     Set<User> users = new HashSet<>();
     users.add(user1);
     users.add(user2);
     users.add(user3);
 
     Set<String> strings = new HashSet<>();
-    users.forEach(item ->{
+    users.forEach(item -> {
 //      if (strings.contains(item.getUsername())){
 //        System.out.println("有重复的值");
 //      }
-      if (strings.add(item.getUsername())){
+      if (strings.add(item.getUsername())) {
         System.out.println("有重复的值");
       }
       strings.add(item.getUsername());
@@ -68,7 +68,7 @@ public class HashSetTest {
 
     Set<String> stringSet2 = new HashSet<>();
     stringSet1.forEach(item -> {
-      if (stringSet2.contains(item)){
+      if (stringSet2.contains(item)) {
         System.out.println("有重复的值");
       }
       stringSet2.add(item);
@@ -123,7 +123,7 @@ public class HashSetTest {
     hashSet.add("B");
     //迭代器遍历Set集合
     Iterator<String> iterator = hashSet.iterator();
-    while (iterator.hasNext()){
+    while (iterator.hasNext()) {
       System.out.println(iterator.next());
     }
   }

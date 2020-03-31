@@ -8,7 +8,6 @@ import java.util.stream.Collectors;
 
 /**
  * @Description: Collector源码分析与收集器核心
- *
  * @Author: TanBoQiuYun
  * @Date: 2019/12/24 14:49
  */
@@ -33,6 +32,7 @@ public class CollectorTest {
 
   /**
    * 第一个
+   *
    * @param studentList
    */
   private static void test1(List<Student> studentList) {

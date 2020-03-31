@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 /**
  * 关于String类的小作业
+ *
  * @Author: TanBoQiuYun
  * @Date: 2020/1/7 9:50
  */
@@ -35,7 +36,7 @@ public class HomeWork {
     String[] splitStr = str.split(" ");
     String lastStr = "";
     for (String item : splitStr) {
-      String substringFirst = item.substring(0,1).toUpperCase();
+      String substringFirst = item.substring(0, 1).toUpperCase();
       String substringRemain = item.substring(1);
       String newStr = substringFirst + substringRemain;
       lastStr = lastStr + newStr + " ";
@@ -52,7 +53,7 @@ public class HomeWork {
     String strNumber = "";
     char[] chars = str.toCharArray();
     for (int i = 0; i < chars.length; i++) {
-      if (Character.isDigit(chars[i])){
+      if (Character.isDigit(chars[i])) {
         strNumber = strNumber + chars[i];
       }
     }
@@ -67,7 +68,7 @@ public class HomeWork {
     char[] chars = str.toCharArray();
     int count = 0;
     for (char c : chars) {
-      if (c == ' '){
+      if (c == ' ') {
         count++;
       }
     }
@@ -80,7 +81,7 @@ public class HomeWork {
    * abccba
    */
   private static void test2() {
-    while (true){
+    while (true) {
       Scanner scanner = new Scanner(System.in);
       System.out.println("请输入回文字符串：");
       String str = scanner.nextLine();
@@ -115,7 +116,7 @@ public class HomeWork {
     String str = "tanbo";
     char[] chars = str.toCharArray();
     String revese = "";
-    for (int i = chars.length-1; i >=0; i--) {
+    for (int i = chars.length - 1; i >= 0; i--) {
       revese = revese + chars[i];
     }
     System.out.println(revese);

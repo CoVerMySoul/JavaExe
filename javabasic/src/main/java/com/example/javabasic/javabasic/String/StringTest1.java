@@ -48,7 +48,7 @@ public class StringTest1 {
    */
   private static void test11() {
     String str = "abcdefg";
-    String substring = str.substring(1,2);
+    String substring = str.substring(1, 2);
     System.out.println(substring);
   }
 
@@ -58,7 +58,7 @@ public class StringTest1 {
   private static void test10() {
     String str = "a-b-c-d";
     String[] split = str.split("-", 3);
-    for (String s:split) {
+    for (String s : split) {
       System.out.println(s);
     }
   }
@@ -97,7 +97,7 @@ public class StringTest1 {
 //    for (byte b: bytes) {
 //      System.out.println(b);
 //    }
-    System.out.println("字节数组的长度："+ bytes.length);
+    System.out.println("字节数组的长度：" + bytes.length);
   }
 
   /**
@@ -171,12 +171,12 @@ public class StringTest1 {
    * String类构造方法
    */
   private static void test1() {
-    byte[] bytes = new byte[]{65,97,33};
+    byte[] bytes = new byte[]{65, 97, 33};
     String strByte = new String(bytes);
     System.out.println(strByte);
 
     char[] chars = {'t', 'b', 'q', 'y'};
-    String strChar= new String(chars);
+    String strChar = new String(chars);
     System.out.println(strChar);
 
     strByte.compareTo(strChar);
@@ -195,6 +195,6 @@ public class StringTest1 {
     String hello = "hello";
     String s = hello.substring(0, 1).toUpperCase() + hello.substring(1);
 //    System.out.println(s);
-    System.out.println( hello.substring(1,3));
+    System.out.println(hello.substring(1, 3));
   }
 }

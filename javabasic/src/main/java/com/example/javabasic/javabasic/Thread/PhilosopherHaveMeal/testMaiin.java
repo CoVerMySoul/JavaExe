@@ -2,6 +2,7 @@ package com.example.javabasic.javabasic.Thread.PhilosopherHaveMeal;
 
 /**
  * 测试哲学家就餐问题
+ *
  * @Author: TanBoQiuYun
  * @Date: 2020/3/17 21:35
  */

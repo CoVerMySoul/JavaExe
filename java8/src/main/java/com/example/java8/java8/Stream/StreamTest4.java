@@ -31,6 +31,7 @@ public class StreamTest4 {
 
   /**
    * 分区——90及90以上就是通过(true),否则为不通过(false)
+   *
    * @param users
    */
   private static void test4(List<User> users) {
@@ -41,6 +42,7 @@ public class StreamTest4 {
 
   /**
    * 分组——select name, count(*) from user group by name
+   *
    * @param users
    */
   private static void test3(List<User> users) {
@@ -56,6 +58,7 @@ public class StreamTest4 {
 
   /**
    * 分组——按照姓名进行分组
+   *
    * @param users
    */
   private static void test2(List<User> users) {
@@ -66,6 +69,7 @@ public class StreamTest4 {
 
   /**
    * 完成交叉输出,flatMap是把结果打平了，返回单个的stream对象
+   *
    * @param list1
    * @param list2
    */

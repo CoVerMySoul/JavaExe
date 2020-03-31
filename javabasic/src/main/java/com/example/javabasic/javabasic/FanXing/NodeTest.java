@@ -27,20 +27,22 @@ public class NodeTest {
     System.out.println(node.getData());
   }
 
-  public static void getMyData(Node<Number> node){
+  public static void getMyData(Node<Number> node) {
     System.out.println(node.getData());
   }
 
   /**
    * 可以接受任意的泛型类型
+   *
    * @param node
    */
-  public static void getMyData2(Node<?> node){
+  public static void getMyData2(Node<?> node) {
     //不能修改
 //    node.setData(10);
     //可以读取
     System.out.println(node.getData());
   }
+
   private static void nodaTest1() {
     Node<Integer> integerNode = new Node<>();
     Node<String> stringNode = new Node<>("tanbo");
@@ -49,13 +51,14 @@ public class NodeTest {
 
   /**
    * 泛型方法 返回的是<T> T[]
+   *
    * @param array
    * @param i
    * @param t
    * @param <T>
    * @return
    */
-  public static <T> T[] func(T[] array, int i, int t){
+  public static <T> T[] func(T[] array, int i, int t) {
     T temp = array[i];
     array[i] = array[t];
     return array;

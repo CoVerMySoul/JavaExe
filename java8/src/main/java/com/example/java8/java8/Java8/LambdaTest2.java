@@ -40,11 +40,11 @@ public class LambdaTest2 {
 }
 
 @FunctionalInterface
-interface TheInterface{
-  void  myMethod();
+interface TheInterface {
+  void myMethod();
 }
 
 @FunctionalInterface
-interface TheInterface2{
+interface TheInterface2 {
   void myMethod2();
 }

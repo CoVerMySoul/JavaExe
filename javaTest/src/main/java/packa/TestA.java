@@ -6,28 +6,28 @@ package packa;
  */
 public class TestA {
 
-  public void testPublic(){
+  public void testPublic() {
     System.out.println("我是Public修饰");
   }
 
-  void testDefault(){
+  void testDefault() {
     System.out.println("我是默认修饰");
   }
 
-  protected void testProtected(){
+  protected void testProtected() {
     System.out.println("我是protected修饰");
   }
 
-  private void testPrivate(){
+  private void testPrivate() {
     System.out.println("我是private修饰");
   }
 
   public static void main(String[] args) {
-      TestA a = new TestA();
-      a.testDefault();
-      a.testPrivate();
-      a.testProtected();
-      a.testPublic();
+    TestA a = new TestA();
+    a.testDefault();
+    a.testPrivate();
+    a.testProtected();
+    a.testPublic();
   }
 
 }

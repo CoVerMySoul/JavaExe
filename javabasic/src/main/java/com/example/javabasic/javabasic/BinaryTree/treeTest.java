@@ -15,7 +15,7 @@ public class treeTest {
 
   private static void printTree(TreeNode root) {
     if (root != null) {
-      System.out.print(root.val+ " ");
+      System.out.print(root.val + " ");
       printTree(root.left);
       printTree(root.right);
     }
@@ -24,19 +24,20 @@ public class treeTest {
 
   /**
    * 创建二叉树
+   *
    * @param node
    * @return
    */
-  private static TreeNode create(TreeNode node){
+  private static TreeNode create(TreeNode node) {
     Scanner in = new Scanner(System.in);
     System.out.println("请输入节点的值：");
     int value = in.nextInt();
-    if (value != 0){
+    if (value != 0) {
       node = new TreeNode();
       node.val = value;
       node.left = create(node.left);
       node.right = create(node.right);
-    }else {
+    } else {
       node = null;
     }
     return node;

@@ -10,7 +10,7 @@ import java.util.TreeMap;
  */
 public class MapTest {
   public static void main(String[] args) {
-    Map<String,Object> map = new HashMap<>();
-    Map<String,Object> treeMap = new TreeMap<>();
+    Map<String, Object> map = new HashMap<>();
+    Map<String, Object> treeMap = new TreeMap<>();
   }
 }

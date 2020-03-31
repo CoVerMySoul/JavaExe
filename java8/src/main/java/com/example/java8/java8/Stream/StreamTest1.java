@@ -20,7 +20,7 @@ public class StreamTest1 {
 
   private static void theUse3OfStream() {
     List<String> list = Arrays.asList("1", "2", "3", "4");
-    list.stream().forEach( i -> System.out.println(i));
+    list.stream().forEach(i -> System.out.println(i));
   }
 
   /**

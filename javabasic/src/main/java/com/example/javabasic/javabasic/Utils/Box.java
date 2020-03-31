@@ -2,6 +2,7 @@ package com.example.javabasic.javabasic.Utils;
 
 /**
  * 一个盒子定义了一套规则：只有有一样行为得就是一个盒子
+ *
  * @Author: TanBoQiuYun
  * @Date: 2020/1/9 16:31
  */

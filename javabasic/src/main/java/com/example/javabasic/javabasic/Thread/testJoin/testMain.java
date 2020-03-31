@@ -6,7 +6,7 @@ package com.example.javabasic.javabasic.Thread.testJoin;
  */
 public class testMain {
   public static void main(String[] args) {
-      ThreadOne threadOne = new ThreadOne();
-      threadOne.start();
+    ThreadOne threadOne = new ThreadOne();
+    threadOne.start();
   }
 }

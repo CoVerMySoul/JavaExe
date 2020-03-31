@@ -10,7 +10,9 @@ package com.example.javabasic.javabasic.FanXing;
 public class Node<T> {
   private T data;
 
-  public Node(){}
+  public Node() {
+  }
+
   public Node(T data) {
     this.data = data;
   }

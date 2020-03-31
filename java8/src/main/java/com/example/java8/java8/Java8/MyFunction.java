@@ -35,7 +35,7 @@ public class MyFunction {
 //    });
 
     //方式3
-    Collections.sort(names, (o1, o2) ->{
+    Collections.sort(names, (o1, o2) -> {
       return o2.compareTo(o1);
     });
 

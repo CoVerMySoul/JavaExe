@@ -6,7 +6,8 @@ package com.example.javabasic.javabasic.Thread.PhilosopherHaveMeal;
  */
 public class Chopstick {
   private int num;
-  public Chopstick(int num){
+
+  public Chopstick(int num) {
     this.num = num;
   }
 

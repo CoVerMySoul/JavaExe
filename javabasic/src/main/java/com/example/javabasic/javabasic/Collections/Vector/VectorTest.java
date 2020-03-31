@@ -18,9 +18,9 @@ public class VectorTest {
    */
   private static void test1() {
     Vector<String> vector = new Vector<>();
-    for (int i=0;i<100;i++) {
+    for (int i = 0; i < 100; i++) {
       vector.add("a");
-      System.out.println(vector.size() + "--" +vector.capacity());
+      System.out.println(vector.size() + "--" + vector.capacity());
     }
   }
 }

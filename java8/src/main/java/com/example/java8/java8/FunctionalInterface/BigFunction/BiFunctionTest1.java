@@ -17,20 +17,21 @@ public class BiFunctionTest1 {
 
   /**
    * 抽象的行为先提前定义好
+   *
    * @param a
    * @param b
    * @param biFunction
    * @return
    */
-  public int myCompute(int a, int b, BiFunction<Integer, Integer, Integer> biFunction){
+  public int myCompute(int a, int b, BiFunction<Integer, Integer, Integer> biFunction) {
     return biFunction.apply(a, b);
   }
 
-  public int add(int a, int b){
+  public int add(int a, int b) {
     return a + b;
   }
 
-  public int mult(int a, int b){
+  public int mult(int a, int b) {
     return a * b;
   }
 }

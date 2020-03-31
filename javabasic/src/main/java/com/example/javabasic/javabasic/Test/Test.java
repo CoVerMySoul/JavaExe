@@ -22,12 +22,12 @@ public class Test {
 //    test4();
     Scanner scanner = new Scanner(System.in);
     do {
-      int x =scanner.nextInt();
-      if (x<=0){
+      int x = scanner.nextInt();
+      if (x <= 0) {
         break;
       }
       test5();
-    }while (true);
+    } while (true);
   }
 
   private static void test5() {
@@ -45,7 +45,7 @@ public class Test {
     p.sleep();
     p.talk();
 
-    Teacher t = (Teacher)p;//向下转型，需要强制类型转换
+    Teacher t = (Teacher) p;//向下转型，需要强制类型转换
     t.teach();
   }
 

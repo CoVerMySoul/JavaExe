@@ -1,4 +1,5 @@
 package com.example.java8.java8.Stream;
+
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
 import java.util.List;
@@ -60,7 +61,7 @@ public class StreamTest2 {
    * 找出该流中大于2的元素，然后将每个元素乘以2，然后忽略掉流中的前两个元素，
    * 然后再取流当中的前两个元素，
    * 最后1、求出流元素中的和 (9+7) = 32
-   *     2、求出流中最小的元素
+   * 2、求出流中最小的元素
    * 问题：为啥sum()返回的是一个普通int，而max()和min()返回的确是OptionalInt这样一个容器呢？
    * 答案：本质上是取决于这个值可不可能为空，sum()如果没有是返回0，而max和min可能返回为空
    * 进一步问题：同时求出和，最大值，最小值
