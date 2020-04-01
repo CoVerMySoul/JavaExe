@@ -1,27 +1,11 @@
-package com.example.javabasic.javabasic.LeetCode;
-
-import java.util.ArrayList;
-import java.util.List;
+package LeetCode.Medium;
 
 /**
- * 难度为中等的
- *
+ * @Decprition:
  * @Author: TanBoQiuYun
- * @Date: 2020/1/17 11:21
+ * @Date: 2020/4/1 10:13
  */
-public class MediumQuestions {
-  /**
-   * 给定一个无重复元素的数组 candidates 和一个目标数 target ，
-   * 找出 candidates 中所有可以使数字和为 target 的组合。
-   *
-   * @param candidates
-   * @param target
-   * @return
-   */
-  public List<List<Integer>> combinationSum(int[] candidates, int target) {
-    return null;
-  }
-
+public class Sort {
   /**
    * 912. 排序数组(冒泡排序)
    * 给定一个整数数组 nums，将该数组升序排列。

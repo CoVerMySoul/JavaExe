@@ -6,12 +6,14 @@ package JVM;
  */
 public class MyTest2 {
   public static void main(String[] args) {
-    System.out.println(MyParent2.str);
+    System.out.println(MyParent2.m);
   }
 }
 
 class MyParent2{
   public static final String str = "hello world";
+
+  public static final int m = 0;
   static {
     System.out.println("MyParent2 static block");
   }

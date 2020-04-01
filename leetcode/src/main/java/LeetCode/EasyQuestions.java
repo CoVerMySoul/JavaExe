@@ -1,6 +1,6 @@
-package com.example.javabasic.javabasic.LeetCode;
+package LeetCode;
 
-import com.example.javabasic.javabasic.BinaryTree.TreeNode;
+//import com.example.javabasic.javabasic.BinaryTree.TreeNode;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -393,40 +393,6 @@ public class EasyQuestions {
     return count;
   }
 
-  /**
-   * 704. 二分查找
-   *
-   * @param nums
-   * @param target
-   * @return
-   */
-  public int BinarySearch(int[] nums, int target) {
-    int left = 0;
-    int right = nums.length - 1;
-    while (left <= right) {
-      int middle = (left + right) / 2;
-      if (nums[middle] == target) {
-        return middle;
-      } else if (target > nums[middle]) {
-        left = middle + 1;
-      } else if (target < nums[middle]) {
-        right = middle - 1;
-      }
-    }
-    return -1;
-  }
-
-  /**
-   * 面试题 10.05. 稀疏数组搜索（二分查找）
-   *
-   * @param words
-   * @param s
-   * @return
-   */
-  public int findString(String[] words, String s) {
-
-    return -1;
-  }
 
   /**
    * 面试题05. 替换空格
@@ -661,12 +627,12 @@ public class EasyQuestions {
    * @param root
    * @return
    */
-  public int maxDepth(TreeNode root) {
-    if (root == null) return 0;
-    int left = maxDepth(root.left);
-    int right = maxDepth(root.right);
-    return Math.max(left, right) + 1;
-  }
+//  public int maxDepth(TreeNode root) {
+//    if (root == null) return 0;
+//    int left = maxDepth(root.left);
+//    int right = maxDepth(root.right);
+//    return Math.max(left, right) + 1;
+//  }
 
   /**
    * 700. 二叉搜索树中的搜索
@@ -675,10 +641,10 @@ public class EasyQuestions {
    * @param val
    * @return
    */
-  public TreeNode searchBST(TreeNode root, int val) {
-    if (root == null || root.val == val) return root;
-    return val > root.val ? searchBST(root.right, val) : searchBST(root.left, val);
-  }
+//  public TreeNode searchBST(TreeNode root, int val) {
+//    if (root == null || root.val == val) return root;
+//    return val > root.val ? searchBST(root.right, val) : searchBST(root.left, val);
+//  }
 
   /**
    * 面试题 01.03. URL化
