@@ -8,7 +8,6 @@ package com.example.javabasic.javabasic.Pojo;
 public class Person extends Object {
   private int age;
   private String name;
-  private static String tanbo;
 
   public Person() {
 

@@ -493,19 +493,20 @@ public class EasyQuestions {
 
   /**
    * 136. 只出现一次的数字
-   *
+   *  可以用异或运算
    * @param nums
    * @return
    */
   public int singleNumber(int[] nums) {
-//    HashSet<Integer> set = new HashSet<>();
-//    for (int num : nums) {
-//      if (set.contains(num)){
-//        return num;
-//      }
-//      set.add(num);
-//    }
-    return 0;
+    HashSet<Integer> set = new HashSet<>();
+    for (int num : nums) {
+      if (set.contains(num)){
+        set.remove(num);
+      }else {
+       set.add(num);
+      }
+    }
+    return set.iterator().next();
   }
 
   /**
@@ -738,4 +739,46 @@ public class EasyQuestions {
     }
     return chars;
   }
+
+  /**
+   * 771. 宝石与石头
+   * @param J
+   * @param S
+   * @return
+   */
+  public int numJewelsInStones(String J, String S) {
+    int count = 0;
+    char[] chars = J.toCharArray();
+    for(char ch : chars){
+      for (int i = 0; i<S.length(); i++){
+        if (ch == S.charAt(i)){
+          count++;
+        }
+      }
+    }
+    return count;
+  }
+
+  /**
+   * 371. 两整数之和
+   * 不使用运算符 + 和 - ​​​​​​​，计算两整数 ​​​​​​​a 、b ​​​​​​​之和。
+   * @param a
+   * @param b
+   * @return
+   */
+  public int getSum(int a, int b) {
+    while (b != 0){
+      // 当进位不为0时
+      // 无进位累加值
+      int temp = a ^ b;
+      //进位值
+      int carry = (a & b) << 1;
+
+      // a=无进位累加值 b=进位值
+      a = temp;
+      b = carry;
+    }
+    return a;
+  }
+
 }

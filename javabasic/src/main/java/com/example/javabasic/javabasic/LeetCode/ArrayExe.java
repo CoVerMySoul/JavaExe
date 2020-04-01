@@ -9,11 +9,11 @@ import java.util.HashSet;
  */
 public class ArrayExe extends Object {
   public static void main(String[] args) {
-    int[] array1 = new int[]{4, 9, 5};
-    int[] array2 = new int[]{9, 4, 9, 8, 4};
+    int[] array1 = new int[]{4, 0, 9, 7, 5};
     EasyQuestions easyQuestions = new EasyQuestions();
-    System.out.println(easyQuestions.isAnagram("anagram", "nagaram"));
+//    System.out.println(easyQuestions.getSum(33, 1));
     MediumQuestions mediumQuestions = new MediumQuestions();
+    mediumQuestions.sortArray(array1);
   }
 
 }

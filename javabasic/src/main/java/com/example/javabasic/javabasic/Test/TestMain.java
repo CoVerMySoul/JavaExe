@@ -10,8 +10,11 @@ import com.example.javabasic.javabasic.Pojo.Student;
  */
 public class TestMain {
   public static void main(String[] args) {
-    Class<Student> studentClass = Student.class;
-    Student student = new Student("1", 20);
-    Class<? extends Student> aClass = student.getClass();
+    for (int i =1;i<=9;i++){
+      for (int j = 1; j <= i; j++) {
+        System.out.print(j + "*" + i + "=" + (i*j)+" ");
+      }
+      System.out.println();
+    }
   }
 }

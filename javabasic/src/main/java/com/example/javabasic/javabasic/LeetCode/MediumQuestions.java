@@ -30,8 +30,7 @@ public class MediumQuestions {
    * @param nums
    * @return
    */
-  public List<Integer> sortArray(int[] nums) {
-    List<Integer> list = new ArrayList<>(nums.length);
+  public int[] sortArray(int[] nums) {
     for (int i = 0; i < nums.length - 1; i++) {
       for (int j = 0; j < nums.length - i - 1; j++) {
         if (nums[j] > nums[j + 1]) {
@@ -41,10 +40,7 @@ public class MediumQuestions {
         }
       }
     }
-    for (int num : nums) {
-      list.add(num);
-    }
-    return list;
+    return nums;
   }
 
   /**
