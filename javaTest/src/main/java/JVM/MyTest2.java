@@ -14,6 +14,8 @@ class MyParent2{
   public static final String str = "hello world";
 
   public static final int m = 0;
+
+  public static final short z = 127;
   static {
     System.out.println("MyParent2 static block");
   }
