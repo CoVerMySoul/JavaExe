@@ -1,4 +1,4 @@
-package JVM;
+package com.jvm.classloader;
 
 /**
  * @Description: 这个例子可以帮助JVM类加载器的执行顺序，

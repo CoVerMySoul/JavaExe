@@ -1,4 +1,4 @@
-package JVM;
+package com.jvm.classloader;
 
 /**
  * @Author: TanBoQiuYun

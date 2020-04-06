@@ -8,12 +8,6 @@ package LeetCode.Easy;
  */
 public class EasyString {
 
-  public static void main(String[] args) {
-    EasyString easyString = new EasyString();
-    System.out.println(easyString.CheckPermutation("abc", "bad"));
-
-  }
-
   /**
    * 1108. IP 地址无效化
    * 输入：address = "1.1.1.1"
@@ -90,5 +84,55 @@ public class EasyString {
       }
     }
     return new String(chars);
+  }
+
+  /**
+   * 657. 机器人能否返回原点
+   * 解题思路：只要上和下相等且左和右相等
+   * @param moves
+   * @return
+   */
+  public boolean judgeCircle(String moves) {
+    char[] chars = moves.toCharArray();
+    int x = 0;
+    int y = 0;
+    for (char ch : chars) {
+      switch (ch){
+        case 'U':x++;break;
+        case 'D':x--;break;
+        case 'L':y++;break;
+        case 'R':y--;break;
+      }
+    }
+    return x == 0 && y ==0;
+  }
+
+  /**
+   * 1309. 解码字母到整数映射
+   * @param s
+   * @return
+   */
+  public String freqAlphabets(String s) {
+    return null;
+  }
+
+  /**
+   * 551. 学生出勤记录 I
+   * @param s
+   * @return
+   */
+  public boolean checkRecord(String s) {
+    int countA = 0;
+    for (int i = 0; i < s.length() && countA <=1; i++){
+      if (s.charAt(i) == 'A'){
+        countA++;
+      }
+    }
+    return countA <=1 && !s.contains("LLL");
+  }
+
+  public static void main(String[] args) {
+    EasyString easyString = new EasyString();
+    System.out.println(easyString.checkRecord("PPALLL"));
   }
 }
