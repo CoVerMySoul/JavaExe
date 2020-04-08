@@ -4,8 +4,10 @@ package test;
  * @Author: TanBoQiuYun
  * @Date: 2020/3/26 15:38
  */
-public class TestMain {
+public class TestMain extends Object{
   public static void main(String[] args) {
+
+    MyClone myClone = new MyClone();
 
     char grade;
     int points = 0;

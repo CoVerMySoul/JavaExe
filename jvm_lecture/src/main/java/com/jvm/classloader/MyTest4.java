@@ -3,6 +3,7 @@ package com.jvm.classloader;
 
 /**
  * 对于数组实例来说，其类型是由JVM在运行期动态生成的，表示为[LJVM.MyParent4;
+ * 动态生成的类型，其父类型就是object
  * @Description:
  * @Author: TanBoQiuYun
  * @Date: 2020/4/1 16:16

@@ -377,15 +377,7 @@ public class EasyQuestions {
   }
 
 
-  /**
-   * 面试题05. 替换空格
-   *
-   * @param s
-   * @return
-   */
-  public String replaceSpace(String s) {
-    return null;
-  }
+
 
   /**
    * 1281. 整数的各位积和之差
@@ -614,7 +606,7 @@ public class EasyQuestions {
 //    if (root == null) return 0;
 //    int left = maxDepth(root.left);
 //    int right = maxDepth(root.right);
-//    return Math.max(left, right) + 1;
+//    return EasyMath.max(left, right) + 1;
 //  }
 
   /**

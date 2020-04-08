@@ -131,8 +131,28 @@ public class EasyString {
     return countA <=1 && !s.contains("LLL");
   }
 
+  /**
+   * 面试题05. 替换空格
+   *
+   * @param s
+   * @return
+   */
+  public String replaceSpace(String s) {
+    StringBuilder str = new StringBuilder();
+    for (int i = 0; i < s.length(); i++) {
+      if (s.charAt(i) == ' '){
+        str.append("%20");
+      }else {
+        str.append(s.charAt(i));
+      }
+    }
+    return str.toString();
+  }
+
+
+
   public static void main(String[] args) {
     EasyString easyString = new EasyString();
-    System.out.println(easyString.checkRecord("PPALLL"));
+    System.out.println(easyString.replaceSpace("We are happy."));
   }
 }
