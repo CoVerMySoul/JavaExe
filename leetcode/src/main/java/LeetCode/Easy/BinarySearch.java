@@ -3,6 +3,7 @@ package LeetCode.Easy;
 import java.util.HashSet;
 
 /**
+ * 二分查找的题
  * @Author: TanBoQiuYun
  * @Date: 2020/4/1 10:10
  */
@@ -29,6 +30,7 @@ public class BinarySearch {
     }
     return -1;
   }
+
   /**
    * 面试题 10.05. 稀疏数组搜索（二分查找）
    *
@@ -65,6 +67,13 @@ public class BinarySearch {
     }
     //如果没有目标值就插入
     return left;
+  }
+
+  /**
+   * 主方法——测试
+   * @param args
+   */
+  public static void main(String[] args) {
 
   }
 }

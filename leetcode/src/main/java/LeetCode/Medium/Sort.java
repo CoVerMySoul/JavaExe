@@ -51,4 +51,12 @@ public class Sort {
       }
     }
   }
+
+  /**
+   * 主方法——测试
+   * @param args
+   */
+  public static void main(String[] args) {
+
+  }
 }

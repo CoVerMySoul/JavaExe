@@ -24,4 +24,12 @@ public class Sort {
     return count;
   }
 
+  /**
+   * 主方法——测试
+   * @param args
+   */
+  public static void main(String[] args) {
+
+  }
+
 }

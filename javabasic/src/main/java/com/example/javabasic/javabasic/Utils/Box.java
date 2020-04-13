@@ -6,7 +6,8 @@ package com.example.javabasic.javabasic.Utils;
  * @Author: TanBoQiuYun
  * @Date: 2020/1/9 16:31
  */
-public interface Box {
+public interface Box{
+//  public static final  String x = "1";
 
   public boolean add(int element);
 
